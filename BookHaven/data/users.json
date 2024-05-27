@@ -1,0 +1,29 @@
+[
+  {
+    "Name": "Админ",
+    "Surname": "Админов",
+    "Login": "admin",
+    "Password": "admin",
+    "PhoneNumber": "+79118933612",
+    "UserRole": "Admin",
+    "RegDate": "2022-05-22T08:15:00+05:00"
+  },
+  {
+    "Name": "Иван",
+    "Surname": "Иванов",
+    "Login": "ivan",
+    "Password": "password",
+    "PhoneNumber": "+79877913058",
+    "UserRole": "User",
+    "RegDate": "2024-05-22T08:15:00+05:00"
+  },
+  {
+    "Name": "1",
+    "Surname": "1",
+    "Login": "1",
+    "Password": "1",
+    "PhoneNumber": "1",
+    "UserRole": "Employee",
+    "RegDate": "2024-05-27T14:23:35.9544884+05:00"
+  }
+]

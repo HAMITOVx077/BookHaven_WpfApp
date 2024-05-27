@@ -1,0 +1,137 @@
+[
+  {
+    "Title": "Преступление и наказание",
+    "Author": "Фёдор Достоевский",
+    "YearPublished": "1866",
+    "Instance": "1",
+    "BookID": "1",
+    "BookAccess": true,
+    "Description": "Роман о бедственном положении студента, который решается на убийство."
+  },
+  {
+    "Title": "Война и мир",
+    "Author": "Лев Толстой",
+    "YearPublished": "1869",
+    "Instance": "3",
+    "BookID": "2",
+    "BookAccess": true,
+    "Description": "Эпический роман о жизни российских дворян во время наполеоновских войн."
+  },
+  {
+    "Title": "Мёртвые души",
+    "Author": "Николай Гоголь",
+    "YearPublished": "1842",
+    "Instance": "11",
+    "BookID": "5",
+    "BookAccess": true,
+    "Description": "Роман о человеке, который покупает мёртвых крепостных, чтобы улучшить своё социальное положение."
+  },
+  {
+    "Title": "Евгений Онегин",
+    "Author": "Александр Пушкин",
+    "YearPublished": "1833",
+    "Instance": "4",
+    "BookID": "7",
+    "BookAccess": true,
+    "Description": "Роман в стихах о жизни и любви денди Евгения Онегина."
+  },
+  {
+    "Title": "Идиот",
+    "Author": "Фёдор Достоевский",
+    "YearPublished": "1869",
+    "Instance": "12",
+    "BookID": "8",
+    "BookAccess": true,
+    "Description": "Роман о святом князе Мышкине и его влиянии на жизнь окружающих."
+  },
+  {
+    "Title": "Преступление и наказание",
+    "Author": "Фёдор Достоевский",
+    "YearPublished": "1866",
+    "Instance": "97",
+    "BookID": "11",
+    "BookAccess": true,
+    "Description": "Роман о бедственном положении студента, который решается на убийство."
+  },
+  {
+    "Title": "Война и мир",
+    "Author": "Лев Толстой",
+    "YearPublished": "1869",
+    "Instance": "163",
+    "BookID": "12",
+    "BookAccess": true,
+    "Description": "Эпический роман о жизни российских дворян во время наполеоновских войн."
+  },
+  {
+    "Title": "Мастер и Маргарита",
+    "Author": "Михаил Булгаков",
+    "YearPublished": "1967",
+    "Instance": "85",
+    "BookID": "13",
+    "BookAccess": true,
+    "Description": "Роман о встрече дьявола с Москвой."
+  },
+  {
+    "Title": "Анна Каренина",
+    "Author": "Лев Толстой",
+    "YearPublished": "1878",
+    "Instance": "12",
+    "BookID": "14",
+    "BookAccess": true,
+    "Description": "Трагическая история любви Анны Карениной и графа Вронского."
+  },
+  {
+    "Title": "Мёртвые души",
+    "Author": "Николай Гоголь",
+    "YearPublished": "1842",
+    "Instance": "145",
+    "BookID": "15",
+    "BookAccess": true,
+    "Description": "Роман о человеке, который покупает мёртвых крепостных, чтобы улучшить своё социальное положение."
+  },
+  {
+    "Title": "Отцы и дети",
+    "Author": "Иван Тургенев",
+    "YearPublished": "1862",
+    "Instance": "34",
+    "BookID": "16",
+    "BookAccess": true,
+    "Description": "Роман, изображающий конфликт между старшим поколением и молодыми нигилистами."
+  },
+  {
+    "Title": "Евгений Онегин",
+    "Author": "Александр Пушкин",
+    "YearPublished": "1833",
+    "Instance": "105",
+    "BookID": "17",
+    "BookAccess": true,
+    "Description": "Роман в стихах о жизни и любви денди Евгения Онегина."
+  },
+  {
+    "Title": "Идиот",
+    "Author": "Фёдор Достоевский",
+    "YearPublished": "1869",
+    "Instance": "77",
+    "BookID": "18",
+    "BookAccess": true,
+    "Description": "Роман о святом князе Мышкине и его влиянии на жизнь окружающих."
+  },
+  {
+    "Title": "Братья Карамазовы",
+    "Author": "Фёдор Достоевский",
+    "YearPublished": "1880",
+    "Instance": "52",
+    "BookID": "19",
+    "BookAccess": true,
+    "Description": "Роман о сложных отношениях между братьями Карамазовыми и их отцом."
+  },
+  {
+    "Title": "Доктор Живаго",
+    "Author": "Борис Пастернак",
+    "YearPublished": "1957",
+    "Instance": "177",
+    "BookID": "20",
+    "BookAccess": false,
+    "Description": "Роман о жизни врача и поэта во время Российской революции."
+  }
+]

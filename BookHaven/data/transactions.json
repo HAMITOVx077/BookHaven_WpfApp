@@ -1,0 +1,32 @@
+[
+  {
+    "Title": "Идиот",
+    "Author": "Фёдор Достоевский",
+    "YearPublished": "1869",
+    "Instance": "12",
+    "Login": "1",
+    "BookID": "8",
+    "DateOfIssue": "2024-05-28T01:15:09.3654799+05:00",
+    "DateOfReturn": "2024-05-31T00:00:00"
+  },
+  {
+    "Title": "Мёртвые души",
+    "Author": "Николай Гоголь",
+    "YearPublished": "1842",
+    "Instance": "145",
+    "Login": "1",
+    "BookID": "15",
+    "DateOfIssue": "2024-05-28T01:16:59.3449079+05:00",
+    "DateOfReturn": "2024-06-08T00:00:00"
+  },
+  {
+    "Title": "Братья Карамазовы",
+    "Author": "Фёдор Достоевский",
+    "YearPublished": "1880",
+    "Instance": "52",
+    "Login": "1",
+    "BookID": "19",
+    "DateOfIssue": "2024-05-28T01:17:42.0029865+05:00",
+    "DateOfReturn": "2024-05-05T00:00:00"
+  }
+]

@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\books_main.png" />
+    <None Remove="images\catalog.png" />
+    <None Remove="images\control.png" />
+    <None Remove="images\home.png" />
+    <None Remove="images\issue_and_return.png" />
+    <None Remove="images\logo.png" />
+    <None Remove="images\logo_no_back.png" />
+    <None Remove="images\my_books.png" />
+    <None Remove="images\report.png" />
+    <None Remove="images\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\books_main.png" />
+    <Resource Include="images\home.png" />
+    <Resource Include="images\issue_and_return.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookHaven_Library\BookHaven_Library.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\catalog.png" />
+    <Resource Include="images\control.png" />
+    <Resource Include="images\logo.png" />
+    <Resource Include="images\my_books.png" />
+    <Resource Include="images\report.png" />
+    <Resource Include="images\user.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,222 @@
+﻿<Window x:Class="BookHaven.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookHaven"
+        mc:Ignorable="d"
+        Title="BOOK HAVEN - главное окно" Height="700" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.RowSpan="4" Grid.ColumnSpan="3">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#F2F3F4" Offset="0.0"/>
+                    <GradientStop Color="#E3E4E5" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
+        <Image Source="images/logo.png" RenderTransformOrigin="0.352,0.515" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="44" Margin="10,0,0,0" />
+        <Label Foreground="#41a479" Content="BOOK HAVEN - ваш ручной помощник" FontSize="20" Grid.Row="1" FontFamily="Bookman Old Style" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="410" Margin="50,0,0,0"/>
+
+        <Button FontSize="20" Grid.Column="1" Content="Выйти" HorizontalAlignment="Right"  Background="#41a479" Foreground="#f3f3f3" Grid.Row="1" VerticalAlignment="Center" Height="31" Width="110" Click="MainOutButton_Click"/>
+
+        <TabControl Grid.Row="2" Grid.Column="1" Margin="0,5,0,0" >
+            <TabItem x:Name="main">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="images/home.png" Height="26" Width="29"/>
+                        <TextBlock Margin="3">Главная</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <Border BorderBrush="#41a479" BorderThickness="2" CornerRadius="10" Padding="10" Margin="10,0,13,20" Height="508">
+                        <StackPanel Margin="10" HorizontalAlignment="Center">
+                            <TextBlock FontSize="24" FontWeight="Bold" Foreground="#41a479" TextAlignment="Center" Margin="0,0,0,20">Добро пожаловать в Book Haven</TextBlock>
+                            <Image Source="images/books_main.png" Height="150" Width="187" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+                            <TextBlock FontSize="18" TextWrapping="Wrap" Margin="0,0,0,10">
+                            Наше приложение предоставляет следующие возможности для пользователей:
+                            </TextBlock>
+                            <TextBlock FontSize="16" TextWrapping="Wrap" Margin="0,0,0,10">
+                            • Подбирать книги и сортировать их по различным параметрам.
+                            </TextBlock>
+                            <TextBlock FontSize="16" TextWrapping="Wrap" Margin="0,0,0,10">
+                            • Бронировать книги.
+                            </TextBlock>
+                            <TextBlock FontSize="16" TextWrapping="Wrap" Margin="0,0,0,10">
+                            • Просматривать информацию о заимствованных книгах (дата выдачи, дата возврата).
+                            </TextBlock>
+                            <TextBlock FontSize="16" TextWrapping="Wrap" Margin="0,0,0,10">
+                            • Другие полезные функции для удобства пользователей.
+                            </TextBlock>
+                            <TextBlock FontSize="18" TextWrapping="Wrap" Margin="0,20,0,0">
+                            Спасибо, что выбрали Book Haven! Мы надеемся, что наше приложение сделает ваш библиотечный учет простым и удобным.
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="user_profile">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="images/user.png" Height="20" Width="29"/>
+                        <TextBlock Margin="3">Мой профиль</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="20">
+                        <TextBlock FontSize="24" FontWeight="Bold" Foreground="#41a479" TextAlignment="Center" Margin="0,0,0,20">Информация о профиле</TextBlock>
+
+                        <Border BorderBrush="#41a479" BorderThickness="2" CornerRadius="10" Padding="10" Margin="0,0,0,20">
+                            <StackPanel>
+                                <TextBlock FontSize="18" FontWeight="Bold" Margin="0,0,0,10">Имя:</TextBlock>
+                                <TextBlock x:Name="Name_TextBlock" FontSize="16" TextWrapping="Wrap" Margin="0,0,0,10" Text=""/>
+
+                                <TextBlock FontSize="18" FontWeight="Bold" Margin="0,0,0,10">Фамилия:</TextBlock>
+                                <TextBlock x:Name="Surname_TextBlock" FontSize="16" TextWrapping="Wrap" Margin="0,0,0,10" Text=""/>
+
+                                <TextBlock FontSize="18" FontWeight="Bold" Margin="0,0,0,10">Логин:</TextBlock>
+                                <TextBlock x:Name="Login_TextBlock" FontSize="16" TextWrapping="Wrap" Margin="0,0,0,10" Text=""/>
+
+                                <TextBlock FontSize="18" FontWeight="Bold" Margin="0,0,0,10">Уровень доступа:</TextBlock>
+                                <TextBlock x:Name="UserRole_TextBlock" FontSize="16" TextWrapping="Wrap" Margin="0,0,0,10" Text=""/>
+
+                                <TextBlock FontSize="18" FontWeight="Bold" Margin="0,0,0,10">Телефон:</TextBlock>
+                                <TextBlock x:Name="PhoneNumber_TextBlock" FontSize="16" TextWrapping="Wrap" Margin="0,0,0,10" Text=""/>
+
+                                <TextBlock FontSize="18" FontWeight="Bold" Margin="0,0,0,10">Дата регистрации:</TextBlock>
+                                <TextBlock x:Name="RegDate_TextBlock" FontSize="16" Margin="0,0,0,10" Text=""/>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="my_books">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="images/my_books.png" Height="21" Width="29"/>
+                        <TextBlock Margin="3">Мои книги</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <Grid Margin="10">
+                        <DataGrid x:Name="MyBooksDataGrid" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True">
+                            <DataGrid.Items>
+
+                            </DataGrid.Items>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Название книги" Binding="{Binding Title}" Width="*"/>
+                                <DataGridTextColumn Header="Автор" Binding="{Binding Author}" Width="*"/>
+                                <DataGridTextColumn Header="Год издания" Binding="{Binding YearPublished}" Width="*"/>
+                                <DataGridTextColumn Header="Номер экземпляра" Binding="{Binding Instance}" Width="*"/>
+                                <DataGridTextColumn Header="Дата выдачи" Binding="{Binding DateOfIssue}" Width="*"/>
+                                <DataGridTextColumn Header="Дата возврата" Binding="{Binding DateOfReturn}" Width="*"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="catalog">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="images/catalog.png" Height="18" Width="29"/>
+                        <TextBlock Margin="3">Каталог</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
+                            <Button Content="Карточка книги" Click="BookInfoBookButton_Click" Background="#41a479" Foreground="#f3f3f3" Width="110" Margin="350,0,0,0"/>
+                            <Button x:Name="GiveBookButton" Visibility="Visible" Content="Выдать книгу" Click="GiveBookButton_Click" Background="#41a479" Foreground="#f3f3f3" Width="100" Margin="60,0,10,0"/>
+                            <Button x:Name="RemoveBookButton" Visibility="Visible" Content="Удалить книгу" Click="RemoveBookButton_Click" Background="#41a479" Foreground="#f3f3f3" Width="100"/>
+                        </StackPanel>
+
+                        <DataGrid x:Name="BooksCatalogDataGrid" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="False">
+                            <DataGrid.Items>
+
+                            </DataGrid.Items>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Название книги" Binding="{Binding Title}" Width="*"/>
+                                <DataGridTextColumn Header="Автор" Binding="{Binding Author}" Width="*"/>
+                                <DataGridTextColumn Header="Год издания" Binding="{Binding YearPublished}" Width="*"/>
+                                <DataGridTextColumn Header="Номер экземпляра" Binding="{Binding Instance}" Width="*"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="issue_and_return" Visibility="Visible">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="images/issue_and_return.png" Height="21" Width="29"/>
+                        <TextBlock Margin="3">Возврат</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
+                            <Button Content="Вернуть книгу" Click="ReturnBookButton_Click" Background="#41a479" Foreground="#f3f3f3" Width="100" Margin="450,0,0,0"/>
+                        </StackPanel>
+
+                        <DataGrid x:Name="IssueAndReturnDataGrid" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="False">
+                            <DataGrid.Items>
+
+                            </DataGrid.Items>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Логин пользователя" Binding="{Binding Login}" Width="*"/>
+                                <DataGridTextColumn Header="Название книги" Binding="{Binding Title}" Width="*"/>
+                                <DataGridTextColumn Header="Автор" Binding="{Binding Author}" Width="*"/>
+                                <DataGridTextColumn Header="Год издания" Binding="{Binding YearPublished}" Width="*"/>
+                                <DataGridTextColumn Header="Номер экземпляра" Binding="{Binding Instance}" Width="*"/>
+                                <DataGridTextColumn Header="Дата выдачи" Binding="{Binding DateOfIssue}" Width="*"/>
+                                <DataGridTextColumn Header="Дата возврата" Binding="{Binding DateOfReturn}" Width="*"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="control" Visibility="Visible">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="images/control.png" Height="21" Width="29"/>
+                        <TextBlock Margin="3">Управление</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <Border BorderBrush="#41a479" BorderThickness="2" CornerRadius="10" Padding="10" Margin="10,0,13,20" Height="508">
+                        <StackPanel Margin="20">
+
+                            <TextBlock FontSize="24" FontWeight="Bold" Foreground="#41a479" TextAlignment="Center" Margin="0,0,0,20">Управление</TextBlock>
+
+                            <Button x:Name="AddUserButton" FontSize="20" Background="#41a479" Foreground="White" Content="Добавить пользователя" Width="242" Height="45" Margin="0,0,0,20" Click="AddUserButton_Click"/>
+
+                            <Button x:Name="AddBookButton" FontSize="20" Background="#41a479" Foreground="White" Content="Добавить книгу" Width="242" Height="40" Margin="0,0,0,20" Click="AddBookButton_Click"/>
+                        </StackPanel>
+                    </Border>
+                </TabItem.Content>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
